@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jonel Hatwell Personal Portfolio" />
+    <meta
+      name="keywords"
+      content="Portfolio, frontend developer, jonel hatwell,"
+    />
+    <meta name="author" content="Jonel Hatwell" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./images/logo.png" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- OWL CAROUSEL -->
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel/dist/assets/owl.theme.default.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/css/index.css" />
+
+    <title>Jonel Hatwell | Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="navbar-logo">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+
+          <button class="navbar-btn" id="theme-selector">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </nav>
+        <section class="banner" role="banner">
+          <h1 class="banner-name" id="typing-name"></h1>
+          <p class="banner-title">
+            Frontend developer, I translate mock-up design to an awesome
+            website.
+          </p>
+          <div class="btn-c">
+            <div class="confetti hide" id="confetti"></div>
+            <button class="banner-btn" id="click-me">CLICK ME!</button>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="about">
+          <h2 class="section-title">about me</h2>
+          <div class="about-me">
+            <p class="about-me-text">
+              Hello! I'm Jonel Hatwell, currently student at City of Malabon
+              University under the program of Bachelor of Science in Information
+              Technology. I have fundamental knowledge about frontend web
+              development, what I like the most about this field is I can use my
+              creativity and logical skills which gives me a strong feeling of
+              enthusiasm.
+              <br />
+              <br />
+              Now I am learning and doing some pretty good projects online. It's
+              giving me a very good chance to boost my skills and knowledge
+              about frontend development.
+            </p>
+            <div class="resume">
+              <a
+                href="./resume/JonelHatwell-Resume.pdf"
+                target="_blank"
+                id="resume"
+                download="JonelHatwell-Resume.pdf"
+                >View Resume</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="tech-stack">
+          <h2 class="section-title">tech stack</h2>
+          <ul class="technologies">
+            <li>
+              <img
+                src="./images/tech-stack/html.svg"
+                class="stack"
+                alt="html"
+              />
+            </li>
+            <li>
+              <img src="./images/tech-stack/css.svg" class="stack" alt="css" />
+            </li>
+            <li>
+              <img
+                src="./images/tech-stack/javascript.svg"
+                class="stack"
+                alt="javascript"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/tech-stack/sass.svg"
+                class="stack"
+                alt="sass"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/tech-stack/bootstrap.svg"
+                class="stack"
+                alt="bootstrap"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/tech-stack/react-logo.png"
+                class="stack"
+                alt="react"
+              />
+            </li>
+          </ul>
+        </section>
+        <section class="projects">
+          <h2 class="section-title">projects</h2>
+          <div class="projects-featured" id="featured">
+            <!--  -->
+          </div>
+
+          <div class="projects-more">
+            <div class="owl-carousel owl-theme" id="owl-carousel"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="qoute">
+          <q
+            >The bridge between knowledge and skill is practice. The bridge
+            between skill and mastery is time.</q
+          >
+
+          <cite>-Jim Bouchard</cite>
+        </div>
+        <div class="contacts">
+          <h3 class="contacts-title">Contacts</h3>
+          <ul class="list-group">
+            <li class="list-item">
+              <a
+                href="https://www.linkedin.com/in/jonel-hatwell/"
+                target="_blank"
+                aria-label="linkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-item">
+              <a
+                href="https://github.com/hatwell-jonel"
+                target="_blank"
+                aria-label="github"
+              >
+                <i class="fa-brands fa-github-square"></i>
+              </a>
+            </li>
+            <li class="list-item">
+              <a
+                href="mailto:jnlhatwell@gmail.com"
+                target="_blank"
+                aria-label="gmail"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-item">
+              <a
+                href="https://www.facebook.com/hatwell21"
+                target="_blank"
+                aria-label="facebook"
+              >
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+            </li>
+          </ul>
+
+          <p id="copyright">
+            &copy; <span class="year">0000</span> Jonel Hatwell
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BODYMOVIN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"
+      integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- OWL  CAROUSEL -->
+    <script src="./OwlCarousel/dist/owl.carousel.min.js"></script>
+
+    <!-- CAROUSEL -->
+    <!-- Javascript-->
+    <script src="./script/carousel.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

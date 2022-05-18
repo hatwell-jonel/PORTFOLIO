@@ -1,0 +1,87 @@
+.footer{
+  background-color: $clr-dark-footer;
+  padding: 4rem 0rem;
+  margin-top: 10rem;
+
+  .container{
+    position: relative;
+    max-width: 650px;
+    padding: 4rem 0rem 2rem;
+
+    .qoute{
+      position: absolute;
+      top: -10rem;
+      background-color: $clr-accent;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.2);
+      q{
+        font-family: $ff-secondary;
+        color: $clr-dark-text;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      cite{
+        font-family: $ff-secondary;
+        margin-top: 1rem;
+        color: $clr-dark-text;
+        display: block;
+        position: relative;
+        font-weight: 700;
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .contacts{
+      text-align: center;
+
+      &-title{
+        font-family: $ff-primary;
+        font-size: 2rem;
+        color: $clr-dark-text;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        margin-bottom: 1.4rem;
+      }
+
+      .list-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .list-item{
+          margin: 0rem .8rem;
+
+          a{
+            font-size: 2rem;
+            color: $clr-dark-text;
+            >i{
+              &:hover{
+                transform: scale(1.150) rotate(360deg);
+                color: $clr-accent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#copyright{
+  width: 100%;
+  font-family: $ff-primary;
+  pointer-events: none;
+  color: darken($clr-dark-text, 40%);
+  font-size: 1rem;
+  position: absolute;
+  line-height: 1;
+  left: 50%;
+  bottom: -2rem;
+  transform: translate(-50%);
+}

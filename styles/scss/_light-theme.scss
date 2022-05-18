@@ -1,0 +1,50 @@
+.light-theme{
+  background-color: $clr-light-bg;
+
+  .header{
+    .banner{
+
+      &-name{
+        color: $clr-light-text;
+      }
+
+      &-title{
+        color: $clr-light-text;
+      }
+      &-btn{
+        background-color: $clr-light-text;
+        color: $clr-light-bg;
+      }
+    }
+  }
+  .section-title{
+    color: $clr-light-text;
+  }
+
+
+  .footer{
+    background-color: $clr-light-footer;
+    .container{
+
+      .contacts{
+        &-title{
+          color: $clr-light-text;
+        }
+          .list-item{
+            margin: 0rem .8rem;
+  
+            a{
+              color: $clr-light-text;
+              >i{
+                color: $clr-light-text;
+              }
+            }
+          }
+      }
+    }
+  }
+
+  #copyright{
+    color: darken($clr-light-text, 40%);
+  }
+}

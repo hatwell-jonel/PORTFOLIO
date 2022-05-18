@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after{
+  transition: .2s ease;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  scroll-snap-type: x mandatory;
+  position: relative;
+  background-color: $clr-dark-bg;
+  min-width: 300px;
+  
+  /* width */
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $clr-accent;
+    border-radius: 30px;
+  }
+}
+
+h1,h2,h3,h4,p{
+  margin: 0;
+}
+
+a{
+  color: lightblue;
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+button{
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+
+.container{
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1400px;
+  height: 100%;
+
+  @include breakpoint(md){
+    width: 90%;
+  }
+
+  @include breakpoint(lg){
+    width: 85%;
+  }
+}
